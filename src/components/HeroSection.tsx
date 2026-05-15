@@ -34,17 +34,25 @@ export default function HeroSection() {
   }
 
   return (
-    <div id="hero" className="relative h-screen w-full overflow-hidden bg-black">
-      {/* Background Image */}
+    <div id="hero" className="relative h-screen w-full overflow-hidden bg-gray-900">
+      {/* Blurred background fill */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out scale-110"
+        style={{
+          backgroundImage: `url('${slides[currentSlide].image}')`,
+          filter: "blur(20px) brightness(0.4)",
+        }}
+      />
+
+      {/* Main Image */}
       <div
         className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
         style={{
           backgroundImage: `url('${slides[currentSlide].image}')`,
-          backgroundPosition: "center center",
         }}
       >
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Navigation */}

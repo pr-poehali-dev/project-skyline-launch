@@ -102,7 +102,7 @@ export default function HeroSection() {
       )}
 
       {/* Hero Content */}
-      <div className="relative z-10 flex h-full items-center justify-center px-6">
+      <div className="relative z-10 flex h-full items-end justify-center px-6 pb-32">
         <div className="text-center text-white max-w-4xl">
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">

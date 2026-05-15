@@ -5,147 +5,146 @@ import { cn } from "@/lib/utils"
 
 const SQRT_5000 = Math.sqrt(5000)
 
-// Running club testimonials data with randomly generated icons
 const testimonials = [
   {
     tempId: 0,
     testimonial:
-      "Stride Collective изменил мою жизнь. От попыток пробежать 5 минут до первого марафона — это сообщество верило в меня, когда я сам в себя не верил.",
-    by: "Сергей Иванов, марафонец",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SergeyIvanov&backgroundColor=3b82f6&textColor=ffffff",
+      "За 3 месяца тренировок с Сергеем сбросила 9 кг и наконец-то влезла в любимое платье. Но главное — я чувствую себя живой, энергичной и уверенной в себе!",
+    by: "Марина, 34 года",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MarinaK&backgroundColor=ec4899&textColor=ffffff",
   },
   {
     tempId: 1,
     testimonial:
-      "Я боялась присоединиться к беговой группе, но Stride Collective встретил меня с распростертыми объятиями. Теперь у меня друзья на всю жизнь и уверенность достигать любых целей.",
-    by: "Марина Петрова, трейлраннер",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MarinaPetrova&backgroundColor=10b981&textColor=ffffff",
+      "Никогда не думал, что в 45 лет смогу так изменить своё тело. Сергей выстроил программу точно под меня. Силовые выросли, спина перестала болеть — это просто другая жизнь.",
+    by: "Андрей, 45 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AndreyP&backgroundColor=3b82f6&textColor=ffffff",
   },
   {
     tempId: 2,
     testimonial:
-      "Энергетика на пробежках Stride Collective заразительна. Быстрый ты или медленный — все болеют за тебя. Здесь не соревнование, здесь сообщество.",
-    by: "Анна Козлова, любитель 5К",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AnnaKozlova&backgroundColor=8b5cf6&textColor=ffffff",
+      "Привела дочку-подростка к Сергею — у неё была плохая осанка и зажатость в движениях. Уже через месяц изменилась осанка, появилась уверенность и желание двигаться.",
+    by: "Ольга, мама Кати (15 лет)",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=OlgaMom&backgroundColor=10b981&textColor=ffffff",
   },
   {
     tempId: 3,
     testimonial:
-      "После лет одиночных пробежек Stride Collective стал для меня открытием. Групповые тренировки помогли выйти на личные рекорды, о которых я и мечтать не мог.",
-    by: "Дмитрий Смирнов, спринтер",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DmitrySmirnov&backgroundColor=ef4444&textColor=ffffff",
+      "Готовился к соревнованиям, нужна была специфическая работа на выносливость. Сергей — мастер спорта, он знает тело изнутри. Результат превзошёл ожидания.",
+    by: "Дмитрий, 29 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DmitryS&backgroundColor=ef4444&textColor=ffffff",
   },
   {
     tempId: 4,
     testimonial:
-      "Stride Collective научил меня, что бег — это не просто тренировка. Это терапия, дружба и приключение в одном флаконе. Этот клуб спас мое ментальное здоровье.",
-    by: "Елена Новикова, осознанный бегун",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=ElenaNovikova&backgroundColor=f59e0b&textColor=ffffff",
+      "После родов очень хотелось вернуть форму, но боялась навредить. Сергей выстроил щадящую, но эффективную программу. Уже через 2 месяца результат был виден всем.",
+    by: "Екатерина, 31 год",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=EkatK&backgroundColor=f59e0b&textColor=ffffff",
   },
   {
     tempId: 5,
     testimonial:
-      "От дивана до 10К за 6 месяцев с поддержкой Stride Collective. Они принимают тебя таким, какой ты есть, и помогают понять, куда ты можешь дойти. Настоящая магия.",
-    by: "Алексей Морозов, история успеха",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexeyMorozov&backgroundColor=6366f1&textColor=ffffff",
+      "Мой сын занимается с Сергеем с 9 лет. Тренер нашёл подход, сделал тренировки интересными. Сейчас ему 12 — физически развит не по годам и обожает спорт.",
+    by: "Павел, папа Миши",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=PavelD&backgroundColor=6366f1&textColor=ffffff",
   },
   {
     tempId: 6,
     testimonial:
-      "Рассветные пробежки со Stride Collective — это духовный опыт. Есть что-то мощное в том, чтобы двигаться вместе, пока мир просыпается вокруг нас.",
-    by: "Айгуль Рахимова, рассветный патруль",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AigulRahimova&backgroundColor=ec4899&textColor=ffffff",
+      "Пришла с целью просто «подтянуться». Оказалось, у меня были серьёзные проблемы с суставами. Сергей разобрал всё по косточкам и вернул мне комфортное движение.",
+    by: "Наталья, 38 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NatalyaV&backgroundColor=8b5cf6&textColor=ffffff",
   },
   {
     tempId: 7,
     testimonial:
-      "Я вступила в Stride Collective после переезда в новый город. Нашла не только беговое племя, но и настоящую семью. Движение здесь — это образ жизни.",
-    by: "Ольга Ким, строитель сообщества",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=OlgaKim&backgroundColor=06b6d4&textColor=ffffff",
+      "Работаю в офисе, хроническая боль в спине была нормой. После курса тренировок с Сергеем боль ушла, осанка выровнялась. Чувствую себя на 10 лет моложе.",
+    by: "Игорь, 41 год",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=IgorM&backgroundColor=06b6d4&textColor=ffffff",
   },
   {
     tempId: 8,
     testimonial:
-      "Stride Collective празднует каждую победу, даже самую маленькую. Мой первый километр ощущался как олимпийское золото с этой командой, болеющей за меня.",
-    by: "Наталья Соколова, герой первого км",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NataliyaSokolova&backgroundColor=f97316&textColor=ffffff",
+      "Хотела развить гибкость — была жёсткой как доска. Сергей терпеливо, шаг за шагом, за 2 месяца довёл меня до шпагата. Теперь это моя суперсила!",
+    by: "Алина, 26 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlinaR&backgroundColor=f97316&textColor=ffffff",
   },
   {
     tempId: 9,
     testimonial:
-      "Тренировочные планы в Stride Collective невероятные. Я прошел путь от еле добегающего 5К до квалификации на Бостонский марафон всего за два года.",
-    by: "Михаил Волков, Бостонский квалификант",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MikhailVolkov&backgroundColor=84cc16&textColor=ffffff",
+      "Тренируюсь у Сергея уже год. Это не просто тренер — это человек, который искренне заинтересован в твоём результате. Каждая тренировка — это вызов и удовольствие одновременно.",
+    by: "Михаил, 33 года",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=MikhailV&backgroundColor=84cc16&textColor=ffffff",
   },
   {
     tempId: 10,
     testimonial:
-      "Что я люблю в Stride Collective — это разнообразие. Бегуны всех возрастов, с разным опытом и способностями объединяются одной страстью.",
-    by: "София Родригес, чемпион разнообразия",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SofiaRodriguez&backgroundColor=a855f7&textColor=ffffff",
+      "Сергей — редкий специалист: понимает биомеханику, умеет работать с разными людьми и всегда объясняет, зачем то или иное упражнение. Такой подход внушает доверие.",
+    by: "Светлана, 44 года",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=SvetlanaB&backgroundColor=a855f7&textColor=ffffff",
   },
   {
     tempId: 11,
     testimonial:
-      "Дисциплина в Stride Collective не имеет равных. Когда знаешь, что твоя беговая семья ждет тебя — выходишь на пробежку несмотря ни на что.",
-    by: "Тимур Асланов, король постоянства",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=TimurAslanov&backgroundColor=059669&textColor=ffffff",
+      "Занимаюсь с дочкой вместе — нам обеим по разной программе. Это сближает и мотивирует. Видим прогресс друг друга — это бесценно.",
+    by: "Ирина, 39 лет, с дочкой Соней",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=IrinaS&backgroundColor=059669&textColor=ffffff",
   },
   {
     tempId: 12,
     testimonial:
-      "Трейловая группа Stride Collective открыла мне самые красивые места, о которых я и не знал. Бег стал моим способом исследовать мир.",
-    by: "Нина Павлова, исследователь троп",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=NinaPavlova&backgroundColor=0ea5e9&textColor=ffffff",
+      "После травмы колена думал, что спорт для меня закрыт. Сергей разработал реабилитационный план, вернул меня в форму и научил тренироваться правильно.",
+    by: "Алексей, 37 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexeyK&backgroundColor=0ea5e9&textColor=ffffff",
   },
   {
     tempId: 13,
     testimonial:
-      "Разговоры после пробежек в Stride Collective ценны не меньше самих пробежек. Мы решаем мировые проблемы километр за километром.",
-    by: "Роман Ким, философ бега",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RomanKim&backgroundColor=dc2626&textColor=ffffff",
+      "За полгода сбросила 14 кг и впервые в жизни полюбила тренировки. Сергей умеет заряжать энергией и верить в тебя, даже когда сам уже готов сдаться.",
+    by: "Юлия, 28 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=YuliyaN&backgroundColor=dc2626&textColor=ffffff",
   },
   {
     tempId: 14,
     testimonial:
-      "Я никогда не думала, что стану бегуном, но дружелюбный к новичкам подход Stride Collective сделал это возможным. Теперь не представляю жизни без бега.",
-    by: "Екатерина Орлова, позднее цветение",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=EkaterinaOrlova&backgroundColor=7c3aed&textColor=ffffff",
+      "Мой ребёнок стал более собранным, дисциплинированным и физически крепким. Сергей умеет работать с детьми — терпеливо, с пониманием, но с результатом.",
+    by: "Виктория, мама Артёма (11 лет)",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=ViktoriaMom&backgroundColor=7c3aed&textColor=ffffff",
   },
   {
     tempId: 15,
     testimonial:
-      "Поддержка при травмах в Stride Collective потрясающая. Когда я выбыл, они поддерживали мою мотивацию и помогли вернуться сильнее.",
-    by: "Даниил Пак, история возвращения",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=DaniilPak&backgroundColor=ea580c&textColor=ffffff",
+      "Пришёл худым и хотел набрать мышечную массу. За 4 месяца результат — плюс 6 кг мышц. Сергей знает, как работает тело на высоком уровне.",
+    by: "Роман, 22 года",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RomanF&backgroundColor=ea580c&textColor=ffffff",
   },
   {
     tempId: 16,
     testimonial:
-      "Благотворительные забеги Stride Collective придают нашим километрам смысл. Мы бежим не только для себя — мы бежим, чтобы изменить мир к лучшему.",
-    by: "Раиса Грин, чемпион благотворительности",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=RaisaGrin&backgroundColor=16a34a&textColor=ffffff",
+      "Тренировки с Сергеем — это инвестиция в себя. Я стала лучше спать, меньше болеть и чувствую себя значительно моложе своих лет.",
+    by: "Тамара, 52 года",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=TamaraG&backgroundColor=16a34a&textColor=ffffff",
   },
   {
     tempId: 17,
     testimonial:
-      "Мастер-классы по технике в Stride Collective преобразили мою беговую форму. Я стал быстрее и забыл о травмах благодаря экспертному руководству.",
-    by: "Кирилл Вонг, перфекционист формы",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=KirillVong&backgroundColor=2563eb&textColor=ffffff",
+      "Сергей сразу увидел мои слабые места — нестабильность корпуса и плохую координацию. Проработали всё системно. Теперь моё тело — это мой инструмент, а не обуза.",
+    by: "Кирилл, 31 год",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=KirillV&backgroundColor=2563eb&textColor=ffffff",
   },
   {
     tempId: 18,
     testimonial:
-      "Виртуальные забеги Stride Collective во время локдауна спасли мой рассудок. Даже когда мы не могли бегать вместе, мы оставались связаны как сообщество.",
-    by: "Александра Фостер, виртуальный воин",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AlexandraFoster&backgroundColor=be185d&textColor=ffffff",
+      "Приходила с целью подкачаться перед свадьбой. Получила намного больше — правильные привычки, любовь к движению и тело, которым я горжусь.",
+    by: "Анастасия, 27 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=AnastasiyaP&backgroundColor=be185d&textColor=ffffff",
   },
   {
     tempId: 19,
     testimonial:
-      "Наставничество в Stride Collective меняет жизни. Опытные бегуны берут новичков под крыло и щедро делятся своей мудростью.",
-    by: "Карлос Мендес, благодарный ученик",
-    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=CarlosMendez&backgroundColor=0891b2&textColor=ffffff",
+      "Международный опыт Сергея чувствуется в каждой тренировке. Это не просто «тренер из зала» — это специалист мирового уровня, который работает с тобой лично.",
+    by: "Владислав, 48 лет",
+    imgSrc: "https://api.dicebear.com/7.x/initials/svg?seed=VladislavC&backgroundColor=0891b2&textColor=ffffff",
   },
 ]
 

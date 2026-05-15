@@ -90,15 +90,15 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
               ГОТОВ
               <br />
               <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-                БЕЖАТЬ С НАМИ?
+                ИЗМЕНИТЬ СЕБЯ?
               </span>
             </h2>
 
             {/* Supporting Text */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-medium">
-              Присоединяйся к тысячам бегунов по всему миру, которые нашли свою команду,
+              Запишитесь на первую тренировку к мастеру спорта России
               <br className="hidden md:block" />
-              раздвинули границы возможного и открыли свой истинный потенциал.
+              и получите индивидуальную программу под ваши цели.
             </p>
 
             {/* Stats Grid */}
@@ -109,28 +109,8 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <Users className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">50 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Бегунов</div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">120+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Городов мира</div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <Calendar className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">365</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Дней в году</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">500+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Клиентов</div>
               </div>
 
               <div className="text-center">
@@ -139,8 +119,28 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
                     <Trophy className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">10 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Целей достигнуто</div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">МС</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Мастер спорта России</div>
+              </div>
+
+              <div className="text-center">
+                <div className="flex justify-center mb-2">
+                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <Calendar className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">10+</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Лет опыта</div>
+              </div>
+
+              <div className="text-center">
+                <div className="flex justify-center mb-2">
+                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div className="text-2xl md:text-3xl font-black text-white mb-1">4</div>
+                <div className="text-xs md:text-sm text-gray-300 font-medium">Группы клиентов</div>
               </div>
             </div>
 
@@ -149,17 +149,17 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
               size="xxl"
               className="font-bold text-xl tracking-wide px-12 py-4 bg-gray-900 hover:bg-gray-800 text-white border-2 border-gray-900 hover:scale-105 transition-all duration-300"
             >
-              ВСТУПИТЬ В STRIDE
+              ЗАПИСАТЬСЯ К СЕРГЕЮ
             </LiquidButton>
 
             {/* Trust Indicators */}
             <div className="mt-12 pt-6 border-t border-white/20">
-              <p className="text-xs text-gray-400 mb-3 font-medium">НАМ ДОВЕРЯЮТ БЕГУНЫ ПО ВСЕМУ МИРУ</p>
+              <p className="text-xs text-gray-400 mb-3 font-medium">РАБОТАЮ СО ВСЕМИ ВОЗРАСТАМИ И УРОВНЯМИ</p>
               <div className="flex flex-wrap justify-center items-center gap-4 text-gray-300">
-                <span className="text-xs font-semibold">ДЛЯ НОВИЧКОВ</span>
-                <span className="text-xs font-semibold">МИРОВОЕ СООБЩЕСТВО</span>
-                <span className="text-xs font-semibold">ПРОВЕРЕННЫЕ РЕЗУЛЬТАТЫ</span>
-                <span className="text-xs font-semibold">БЕСПЛАТНО</span>
+                <span className="text-xs font-semibold">ЖЕНЩИНЫ</span>
+                <span className="text-xs font-semibold">МУЖЧИНЫ</span>
+                <span className="text-xs font-semibold">ПОДРОСТКИ</span>
+                <span className="text-xs font-semibold">ДЕТИ</span>
               </div>
             </div>
           </div>

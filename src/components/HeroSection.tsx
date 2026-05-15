@@ -8,16 +8,8 @@ export default function HeroSection() {
 
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-j46TPXDHzpn3M65wMva3qHPNhwokYn.png",
-      alt: "Группа бегунов в движении",
-    },
-    {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-oH2K0gw1HEqvYhhbwJrYbmkBrbksyk.png",
-      alt: "Бегунья с эффектом размытия",
-    },
-    {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DQ2brNc5Vszxllx17YNA6JqGqiHaRm.png",
-      alt: "Бегун во главе группы",
+      image: "https://cdn.poehali.dev/files/3cc4a974-04bc-4bdf-908b-1c960d850bba.jpg",
+      alt: "Сергей Иськив — персональный тренер",
     },
   ]
 

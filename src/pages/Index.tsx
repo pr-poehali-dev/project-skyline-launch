@@ -99,6 +99,63 @@ export default function Index() {
         </div>
       </section>
 
+      {/* QR Contacts Section */}
+      <section className="relative py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-6xl font-black tracking-wider text-gray-900 mb-4">ЗАПИСАТЬСЯ</h2>
+            <p className="text-xl text-gray-600">Отсканируй QR-код или напиши напрямую</p>
+          </motion.div>
+
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center gap-4"
+            >
+              <img
+                src="https://cdn.poehali.dev/files/5d6eeac3-d4f3-4257-9214-58579c56c8a8.jpg"
+                alt="QR-код Telegram"
+                className="w-56 h-56 object-contain rounded-2xl shadow-lg"
+              />
+              <span className="text-lg font-bold text-gray-900 tracking-wide">Telegram</span>
+              <a
+                href="https://t.me/sergey_iskiv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-500 hover:text-gray-900 transition-colors font-medium"
+              >
+                @sergey_iskiv
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center gap-4"
+            >
+              <img
+                src="https://cdn.poehali.dev/files/1cc50069-418f-4158-a30a-1ece8d9f5b7e.jpg"
+                alt="QR-код Viber"
+                className="w-56 h-56 object-contain rounded-2xl shadow-lg"
+              />
+              <span className="text-lg font-bold text-gray-900 tracking-wide">Viber</span>
+              <span className="text-gray-500 font-medium">Сергей Иськив</span>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Smooth Scroll Hero with CTA Overlay */}
       <section id="join" className="relative">
         <SmoothScrollHero

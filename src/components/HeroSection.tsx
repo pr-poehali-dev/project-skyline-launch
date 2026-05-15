@@ -37,13 +37,14 @@ export default function HeroSection() {
     <div id="hero" className="relative h-screen w-full overflow-hidden bg-black">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
+        className="absolute inset-0 bg-contain bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
         style={{
           backgroundImage: `url('${slides[currentSlide].image}')`,
+          backgroundPosition: "center center",
         }}
       >
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Navigation */}

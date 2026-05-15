@@ -110,7 +110,7 @@ export default function HeroSection() {
           <LiquidButton
             size="xxl"
             className="font-semibold text-lg tracking-wide"
-            onClick={() => scrollToSection("#join")}
+            onClick={() => window.open("https://t.me/sergey_iskiv", "_blank")}
           >
             Записаться на тренировку
           </LiquidButton>
